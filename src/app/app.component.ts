@@ -7,8 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'William Evan';
-  item = {
-    nama : 'Kelengkeng',
-    harga : 10000
-  };
+  itembuah = [
+    {
+      nama : 'Kelengkeng',
+      harga : 10000
+    },
+    {
+      nama : 'Jeruk',
+      harga : 5000
+    },
+    {
+      nama : 'Apel',
+      harga : 3000
+    }];
+
+    itemArr = ["aa","bb","cc"]
+
+    show: boolean = true;
+
+    user = "";
+
+    pesan='';
+    klikButton(){
+      this.pesan='tombol ditekan';
+    }
 }
